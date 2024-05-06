@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video - AC</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <!-- <div class="logo" tabindex="0">AC</div> -->
+      <a href="index.html" style="text-decoration: none; color: inherit;">
+        <div class="logo" tabindex="0">AC</div>
+    </a>
+
+      <div class="menu">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <a href="About.html">About</a>
+        <a href="video.html">Video</a>
+        <a href="#portfolio">Portfolio</a>
+      </div>
+    </div>
+    <h1 class="video">Video</h1>
+
+    <section class="section-video">
+      <h3>Entering the American Job Market as an International Student</h3>
+      <p class="p-para3">
+        In the video, Gina explains her journey as an international student that
+        is trying to find work in America. She goes through the most typical
+        process that most international students take, which is obtaining the 1
+        year of OPT that allows students to work for an year without work
+        sponsorship after graduation. For STEM majors like Gina, this can be
+        extended up to 3 years. However, once again, when the OPT expires, all
+        international students must make a choice between visa sponsorship or
+        leaving the country.
+      </p>
+      <div class="button-container">
+        <a
+          href="https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students#:~:text=Optional%20Practical%20Training%20(OPT)%20is,student's%20major%20area%20of%20study."
+          target="_blank"
+        >
+          <button class="button">More Information about OPT</button></a
+        >
+        <a
+          href="https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations"
+          target="_blank"
+        >
+          <button class="button">More Information about H-1B</button></a
+        >
+      </div>
+
+      <iframe
+        width="600"
+        height="315"
+        src="https://www.youtube.com/embed/6BTGBesv6fc"
+      >
+      </iframe>
+    </section>
+    <section class="section-portfolio">
+      <div class="row">
+        <div class="col col-img">
+          <img src="img/myImage.jpeg" alt="Example Image" class="image" />
+        </div>
+
+        <div class="col col-heading">
+          <div class="name">Gina Jang</div>
+          <p class="p-para4">
+            Gina (Yejin) Jang is an international student that is graduating
+            this semester from UNC Chapel Hill. This is her fifth year in
+            America with a F-1 visa. Although she majors in computer science and
+            mathematics both of which are supposed to guarantee success in the
+            job market, she is struggling to find a job. Even though she nows
+            exactly why, there is nothing much she can do about it.
+          </p>
+        </div>
+
+        <div class="col" id="col-para">
+          <p class="p-para4">
+            As explained in the video, as an international student that is
+            currently in America with a F-1 visa, Gina must find a employer that
+            will sponsor H-1B visa. However, not many employers are willing to
+            do so as the cost of sponsoring the visa is almost equal to that of
+            hiring another worker. Therefore, although Gina hopes to remain in
+            America, if the situation does not work out, she is required to
+            leave the company in an year.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div
+      data-aos="slide-up"
+      data-aos-duration="1000"
+      data-aos-offset="200"
+      data-aos-easing="ease-in-out"
+    >
+      <img src="img/flag.png" alt="Example Image" class="slide-img" />
+    </div>
+
+    <section class="space"></section>
+
+    <div class="footer">
+      <div class="vertical-menu">
+        <div class="logo">
+          AC <br />
+          <br />
+          <img src="img/PIC.jpg" alt="" height="40px" width="40px" />
+        </div>
+      </div>
+    <div></div>
+      <div class="search">
+        <input type="text" placeholder="Search..." />
+        <button type="submit">Submit</button>
+      </div>
+
+      <div class="vertical-menu">
+        <div class="heading">About</div>
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="video.html">Video</a>
+        <a href="#portfolio">Portfolio</a>
+      </div>
+
+      <div class="vertical-menu">
+        <div class="heading">Social</div>
+    
+
+        <a href="https://www.youtube.com/@ariel6418" target="_blank">Youtube</a>
+        <a href="https://www.instagram.com/arixlykc/" target="_blank"
+          >Instagram</a>
+        
+        <a
+          href="https://www.linkedin.com/in/yoo-kyong-choi-238920266/"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </div>
+    </div>
+    <div class="copyright">&copy; 2024 MyName. All rights reserved.</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>function toggleMenu() {
+        const menu = document.querySelector(".navbar .menu");
+        const isVisible = menu.style.display === "flex"; 
+    
+        if (isVisible) {
+            menu.style.display = "none"; 
+        } else {
+            menu.style.display = "flex";
+        }
+    }
+    </script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
